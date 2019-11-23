@@ -3,33 +3,41 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Why So Cool | Hexo</title>
+  <title>JS����������/�жϷ���/ջ���/��ǳ���� | Blog4U</title>
 
   
-  <meta name="author" content="John Doe">
+  <meta name="author" content="TrebleC">
   
 
   
+  <meta name="description" content="�������ӣ�https://blog.csdn.net/weixin_42752574/article/details/102892378
+JS����������/�жϷ���/ջ���/��ǳ����
+һ����������
+
+1�����ֻ�����������
+
+2��һ�������">
+  
 
   
   
-  <meta name="keywords" content="">
+  <meta name="keywords" content="JS">
   
 
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <meta property="og:title" content="Why So Cool"/>
+  <meta property="og:title" content="JS����������/�жϷ���/ջ���/��ǳ����"/>
 
-  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:site_name" content="Blog4U"/>
 
   
   <meta property="og:image" content="/favicon.ico"/>
   
 
   <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Blog4U" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 </head>
 
@@ -41,12 +49,22 @@
     <header>
   <div class="site-branding">
     <h1 class="site-title">
-      <a href="/">Hexo</a>
+      <a href="/">Blog4U</a>
     </h1>
     <p class="site-description"></p>
   </div>
   <nav class="site-navigation">
     <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/categories/">分类</a></li>
+      
+        <li><a href="/archives/">归档</a></li>
+      
+        <li><a href="/tags/">标签</a></li>
+      
+        <li><a href="https://github.com/trebleC" target="_blank" rel="noopener">GitHub</a></li>
       
     </ul>
   </nav>
@@ -57,7 +75,7 @@
 
   
     
-    <h3 class="article-title"><span>Why So Cool</span></h3>
+    <h3 class="article-title"><span>JS����������/�жϷ���/ջ���/��ǳ����</span></h3>
     
   
 
@@ -77,7 +95,166 @@
   <div class="article-content">
     <div class="entry">
       
-        
+        <p>�������ӣ�<a href="https://blog.csdn.net/weixin_42752574/article/details/102892378" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42752574/article/details/102892378</a></p>
+<h3 id="JS����������-�жϷ���-ջ���-��dz����"><a href="#JS����������-�жϷ���-ջ���-��dz����" class="headerlink" title="JS����������/�жϷ���/ջ���/��ǳ����"></a>JS����������/�жϷ���/ջ���/��ǳ����</h3><ul>
+<li><p><a href="#_2">һ����������</a></p>
+</li>
+<li><p><a href="#1_4">1�����ֻ�����������</a></p>
+</li>
+<li><p><a href="#2_13">2��һ����������</a></p>
+</li>
+<li><p><a href="#3_16">3����ⷽ��</a></p>
+</li>
+<li><p><a href="#4_undefinednull_98">4�� undefined��null����</a></p>
+</li>
+<li><p><a href="#_112">����ջ�Ͷ�</a></p>
+</li>
+<li><p><a href="#1_113">1������</a></p>
+</li>
+<li><p><a href="#2_117">2������</a></p>
+</li>
+<li><p><a href="#_121">����ǳ/���</a></p>
+</li>
+<li><p><a href="#1_122">1����������</a></p>
+</li>
+<li><p><a href="#2_144">2������/����</a></p>
+</li>
+</ul>
+<h5 id="һ����������"><a href="#һ����������" class="headerlink" title="һ����������"></a>һ����������</h5><h6 id="1�����ֻ�����������"><a href="#1�����ֻ�����������" class="headerlink" title="1�����ֻ�����������"></a>1�����ֻ�����������</h6><ul>
+<li>undefined</li>
+<li>null</li>
+<li>string</li>
+<li>number(ע��NaN(not a number))</li>
+<li>boolean</li>
+<li>symbol(ES6)</li>
+</ul>
+<h6 id="2��һ����������"><a href="#2��һ����������" class="headerlink" title="2��һ����������"></a>2��һ����������</h6><ul>
+<li>Object(����Array��Function)</li>
+</ul>
+<h6 id="3����ⷽ��"><a href="#3����ⷽ��" class="headerlink" title="3����ⷽ��"></a>3����ⷽ��</h6><ul>
+<li><p>typeof x || typeof (x)<br>�������:undefined��string��number��boolean��object��function��symbol<br>�޷����<code>�����������Array</code></p>
+<p>let a<br>console.log(typeof a) // “undefined”<br>console.log(typeof ‘hello wolrd’) // “string”<br>console.log(typeof 1024) // “number”<br>console.log(typeof true) // “boolean”<br>console.log(typeof []) // “object”<br>console.log(typeof {}) // “object”<br>let add = (x, y) =&gt; x + y<br>console.log(typeof add) // “function”<br>let sym = Symbol()<br>console.log(typeof sym) // “symbol”</p>
+</li>
+</ul>
+<ul>
+<li><p>x instanceof type<br>�������<code>��������</code>�Ƿ���Array || Function || Object(<code>��ԭ������һ��һ�����</code>)<br>�޷�����������</p>
+<p>// ע�� Array Function Ҳ��Object<br>console.log(Array instanceof Object) // true<br>console.log(Function instanceof Object) // true</p>
+<p>console.log(2 instanceof Number) // false<br>console.log(true instanceof Boolean) // false<br>console.log(‘str’ instanceof String) // false</p>
+<p>console.log([] instanceof Array) // true<br>console.log([] instanceof Object) // true<br>console.log((function(){}) instanceof Function) // true<br>console.log((function(){}) instanceof Object) // true<br>console.log(({}) instanceof Object) // true</p>
+</li>
+</ul>
+<ul>
+<li><p>object.constructor<br>constructor ���Է��ضԴ����˶�������麯�������á�</p>
+<p>console.log((2).constructor === Number) //true<br>console.log(true.constructor === Boolean) //true<br>console.log((‘str’).constructor === String) //true<br>console.log(([]).constructor === Array) //true<br>console.log((function() {}).constructor === Function) //true<br>console.log(({}).constructor === Object) //true</p>
+</li>
+</ul>
+<p>ps:<br>(object).constructor,object�������ſ϶������,������ʱ��ᱨ��<br><img src="https://img-blog.csdnimg.cn/20191104095054871.png" alt="![���������ͼƬ����](https://img-blog.csdnimg.cn/20191104095019440.png"><br>��������Ķ��������ԭ�ͣ���<code>�޷���⵽���������</code></p>
+<pre><code>function Fn(){} //ԭ���Ƿ���
+let f=new Fn()
+Fn.prototype=new Array() //�ı�ԭ��Ϊ����
+let f1 = new Fn()
+console.log(f.constructor===Fn) // true
+console.log(f.constructor===Array) // false
+console.log(f1.constructor===Fn) // false
+console.log(f1.constructor===Array) // true</code></pre><ul>
+<li><p>�������䷽��</p>
+<p>// null��ⷽʽ<br>console.log(null === null) // true �����Ķ�������<br>// Array ������ Array.isArray() ���<br>console.log(Array.isArray([])) // true</p>
+</li>
+</ul>
+<ul>
+<li><p>����ͷ���:Object.prototype.toString.call()<br>�ܼ���������ͣ����� “[object type]“�ַ���, ����type�Ƕ�������</p>
+<p>var a = Object.prototype.toString</p>
+<p>console.log(a.call(2)) // “[object Number]”<br>console.log(a.call(true)) // “[object Boolean]”<br>console.log(a.call(‘str’)) //“[object String]”<br>console.log(a.call([])) // “[object Array]”<br>console.log(a.call(function(){})) // “[object Function]”<br>console.log(a.call({})) // “[object Object]”<br>console.log(a.call(undefined)) //“[object Undefined]”<br>console.log(a.call(null))  // “[object Null]”</p>
+</li>
+</ul>
+<h6 id="4��-undefined��null����"><a href="#4��-undefined��null����" class="headerlink" title="4�� undefined��null����"></a>4�� undefined��null����</h6><ul>
+<li>����û���𣬶���ʾ���ޡ�</li>
+<li>ϸ΢����</li>
+</ul>
+<p><code>undefined</code>��ʾ”<code>ȱ��ֵ</code>“������<code>�˴�Ӧ����һ��ֵ</code>�����ǻ�û�ж��塣�����÷��ǣ�</p>
+<ul>
+<li>�����������ˣ���û�и�ֵʱ���͵���undefined��</li>
+<li>���ú���ʱ��Ӧ���ṩ�Ĳ���û���ṩ���ò�������undefined��</li>
+<li>����û�и�ֵ�����ԣ������Ե�ֵΪundefined��</li>
+<li>����û�з���ֵʱ��Ĭ�Ϸ���undefined��</li>
+</ul>
+<p><code>null</code>��ʾ”<code>û�ж���</code>“����<code>�ô���Ӧ����ֵ</code>�������÷��ǣ�</p>
+<ul>
+<li>��Ϊ�����Ĳ�������ʾ�ú����Ĳ������Ƕ���</li>
+<li>��Ϊ����ԭ�������յ㡣</li>
+</ul>
+<h5 id="����ջ�Ͷ�"><a href="#����ջ�Ͷ�" class="headerlink" title="����ջ�Ͷ�"></a>����ջ�Ͷ�</h5><h6 id="1������"><a href="#1������" class="headerlink" title="1������"></a>1������</h6><ul>
+<li>ջ(stack):�Զ�������ڴ�ռ�,����ϵͳ�Զ��ͷ�</li>
+<li>��(heap)��̬������ڴ�ռ�,��С����,Ҳ�����Զ��ͷ�</li>
+</ul>
+<h6 id="2������"><a href="#2������" class="headerlink" title="2������"></a>2������</h6><ul>
+<li>�����������ʹ����ջ��, = ֱ�Ӵ�ֵ</li>
+<li>�����������ʹ��ڷŶ���, = ����ַ<br><img src="https://img-blog.csdnimg.cn/20191104101633414.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mjc1MjU3NA==,size_16,color_FFFFFF,t_70" alt="���������ͼƬ����"></li>
+</ul>
+<h5 id="����dz-���"><a href="#����dz-���" class="headerlink" title="����ǳ/���"></a>����ǳ/���</h5><h6 id="1����������"><a href="#1����������" class="headerlink" title="1����������"></a>1����������</h6><p>ǳ�����������Ҫ����<code>��������</code></p>
+<ul>
+<li><p>������������</p>
+<p>let a = 2<br>let b = a<br>a = 1<br>console.log(a, b) // 1 ,2 ����a,bָ��ջ�ﲻͬ����</p>
+</li>
+</ul>
+<ul>
+<li><p>������������</p>
+<p>let a = {c: 2}<br>let b = a<br>a.c = 1<br>console.log(a.c,b.c) //1��1 ���� a,bָ�����ͬ������</p>
+</li>
+</ul>
+<p>Ϊ��<code>�ж���������a��b����ϵ</code>������������Ҫǳ/���</p>
+<ul>
+<li>ǳ����: һ�㿽��</li>
+<li>���: ���޲㿽��</li>
+</ul>
+<h6 id="2������-����"><a href="#2������-����" class="headerlink" title="2������/����"></a>2������/����</h6><ul>
+<li><p>�����ǳ��������������������Ͷ���ǳ������</p>
+<p>//1������ =<br>var arr1 = [1, 2, 3]<br>var arr2 = arr1<br>arr1[0]=100<br>console.log(arr1,arr2) // [ 100, 2, 3 ] [ 100, 2, 3 ]</p>
+<p>//2��slice<br>var arr3 = [1, 2, 3]<br>var arr4 = arr3.slice(-1) // ȡ�������һ��Ԫ��<br>arr3[2] = 100<br>console.log(arr3,arr4) // [ 1, 2, 100 ] [ 3 ]<br>//�������޸ľ����鲻�ı������飬���������<br>//���ǣ�����<br>var arr5 = [1, 2, 3, {b: 4}]<br>var arr6 = arr5.slice(-1)<br>arr5[3].b = 100<br>console.log(arr5, arr6) //[ 1, 2, 3, { b: 100 } ] [ { b: 100 } ]<br>// ���������Ԫ���Ǹ��������ͣ���ô�����������Ԫ�ر��ı䣬��Ӱ��������<br>// ����slice()������ǳ����</p>
+<p>//3��concat ͬ����</p>
+<p>//4������<br>var arr7 = [1,2,3,{b:4}]<br>var arr8 = []<br>for (var i = 0; i &lt; arr7.length; i ++) {<br>   arr8.push(arr7[i])<br>}<br>arr7[3].b = 100<br>console.log(arr7, arr8) // [ 1, 2, 3, { b: 100 } ] [ 1, 2, 3, { b: 100 } ]</p>
+</li>
+</ul>
+<ul>
+<li><p>�����ǳ����</p>
+<p>// 1�� ����ǳ���� - Object.assign<br>function shallowCopy4(origin) {</p>
+<pre><code>return Object.assign({},origin)</code></pre><p>}</p>
+<p>//2�� ����ǳ���� - ��չ�����<br>// ��չ�������…������ȡ��������������пɱ������ԣ���������ǰ����֮��<br>function shallowCopy5(origin) {</p>
+<pre><code>return {
+    ...origin
+}</code></pre><p>}</p>
+</li>
+</ul>
+<ul>
+<li>���</li>
+</ul>
+<p>1.������JSON�������л�</p>
+<pre><code>function deepClone1(origin) {
+    return JSON.parse(JSON.stringify(origin))
+}</code></pre><ul>
+<li>ԭ�������� JSON.stringify ��js�������л���JSON�ַ���������ʹ��JSON.parse�������л�����ԭ��js����</li>
+<li>ȱ�㣺ȱ������޷����� <code>undefined��function��symbol</code>�������������ֵ����������<code>null</code></li>
+</ul>
+<p>2���ݹ�ʵ��</p>
+<pre><code>function DeepClone(originObj) {
+    // ���ж�obj�����黹�Ƕ���
+    let newObj;
+    if(originObj instanceof Array ) {
+        newObj = []
+    } else if (originObj instanceof Object) {
+        newObj = {}
+    }
+    for (let key in originObj) {
+        // �ж���Ԫ������
+        if (typeof(originObj[key]) === &quot;object&quot;) {
+            // �����Ԫ��Ϊobject �ݹ�һ��
+            newObj[key] = DeepClone(originObj[key])
+        } else {
+            newObj[key] = originObj[key]
+        }
+    }
+    return newObj
+}</code></pre>
       
     </div>
 
@@ -87,7 +264,21 @@
     <div class="article-meta pull-left">
 
     
+      
 
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/JS/">JS</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/JS/">JS</a>
+    </span>
     
 
     </div>
@@ -111,7 +302,7 @@
     Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
     </br>
     
-    &copy; 2019 John Doe
+    &copy; 2019 TrebleC
     
   </p>
 </footer>
